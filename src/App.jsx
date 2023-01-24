@@ -1,17 +1,14 @@
-import React,{ useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { GoSearch } from 'react-icons/go'
 import { CgProfile } from 'react-icons/cg'
 import { ImLocation } from 'react-icons/im'
 import { HiCursorClick } from 'react-icons/hi'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-import data from './data/data.json'
-import { FiExternalLink } from 'react-icons/fi'
-import { TbCertificate } from 'react-icons/tb'
+
 
 const App = () => {
-
-  const repos1 = data.certificat
-
 
   const [name, setName] = useState('');
   const [username, setUsername] = useState('');
@@ -21,24 +18,15 @@ const App = () => {
   const [following, setFollowing] = useState('');
   const [repos, setRepos] = useState('');
   const [avatar, setAvatar] = useState('');
-  const [reposObj, setReposObj] = useState({});
   const [userInput, setUserInput] = useState('');
   const [blog, setBlog] = useState('');
-  const [error, setError] = useState('');
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     fetch("https://api.github.com/users/hamzamaach")
       .then(res => res.json())
       .then(data => {
-        // console.log(data);
         setData(data);
-      });
-
-      fetch("https://api.github.com/users/hamzamaach/repos")
-      .then(res => res.json())
-      .then(data => {
-        setReposObj(data);
-        // console.log(data);
       });
   }, []);
 
@@ -67,52 +55,85 @@ const App = () => {
   const handeleSearch = (e) => {
     setUserInput(e.target.value)
   }
+
   const search = `https://api.github.com/users/${userInput}`;
-  const searchRepos = `https://api.github.com/users/${userInput}/repos`;
 
   const handeleSubmit = (e) => {
     e.preventDefault();
     fetch(search)
       .then(res => res.json())
       .then(data => {
-        setData(data);
-        // setObj(data)
+        if (data.message) {
+          setError(true)
+          notify();
+          e.target.reset()
+          // console.log('hi');
+        } else {
+          setData(data);
+          e.target.reset()
+        }
       })
   }
+
+  const notify = () => toast.error("Le nom d'utilisateur incorrect", {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+  });
+
+
+
   return (
     <div>
       <header>
-        <form onSubmit={handeleSubmit} class="search-box">
-          <button class="btn-search"><GoSearch class="fas fa-search" /></button>
-          <input onChange={handeleSearch} type="text" class="input-search" placeholder="Type to Search..." />
+        <form onSubmit={handeleSubmit} className="search-box">
+          <button className="btn-search"><GoSearch className="fas fa-search" /></button>
+          <input onChange={handeleSearch} type="text" className="input-search" placeholder="Type to Search..." />
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"
+          />
         </form>
         {/* <p>{JSON.stringify(test)}</p> */}
         {/* <p>{JSON.stringify(reposObj[1])}</p> */}
         <div className="container header_container">
-          <div class="card">
-            <div class="card-header">
-              <img src={avatar} alt="Profile Image" class="profile-img" />
+          <div className="card">
+            <div className="card-header">
+              <img src={avatar} alt="Profile Image" className="profile-img" />
             </div>
-            <div class="card-body">
+            <div className="card-body">
               {name &&
-                <p class="name">{name}</p>
+                <p className="name">{name}</p>
               }
               {username &&
-                <p class="mail"><CgProfile className='iconC' />{username}</p>
+                <p className="mail"><CgProfile className='iconC' />{username}</p>
               }
               {location &&
-                <p class="mail"><ImLocation className='iconC' />{location}</p>
+                <p className="mail"><ImLocation className='iconC' />{location}</p>
               }
               {bio &&
-                <p class="mail">{bio}</p>
+                <p className="mail">{bio}</p>
               }
               {blog &&
-                <a href={blog} target='_blank' class="mail"><HiCursorClick className='iconC' />{blog}</a>
+                <a href={blog} target='_blank' className="mail"><HiCursorClick className='iconC' />{blog}</a>
               }
 
             </div>
-            <div class="card-footer">
-              <p class="count">
+            <div className="card-footer">
+              <p className="count">
                 <span> {followers}</span> Followers |
                 <span> {following}</span> Following |
                 <span> {repos}</span> Repositories</p>
@@ -120,33 +141,6 @@ const App = () => {
           </div>
         </div>
       </header>
-      <section id="certificat">
-        <h2>Repositories</h2>
-        <div className="container certificat_container">
-          <div layout className="certificats">
-            {
-              repos1.map((item, index) =>
-                <div layout className="certificat" key={index} >
-                  <div className="card1 card1_container">
-                    <div className="card1 card1_titre">
-                      <div className="card1_icon">
-                        <TbCertificate className='titre-icon' />
-                      </div>
-                      <div className="titre_card1">
-                        <span className='titre'>{item.name}</span>
-                      </div>
-                    </div>
-                    <div className="card1_detail">
-                      <div className='card1 card1_afficher'>
-                        <a href={item.html_url} target="_blank" className='Afficher' >Afficher <FiExternalLink /></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-          </div>
-        </div>
-      </section>
     </div>
   )
 }
