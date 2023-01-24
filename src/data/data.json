@@ -1,0 +1,306 @@
+{
+  "nom": "Hamza MAACH",
+  "dateNaissance": "2002-05-27",
+  "ville": "Berkane",
+  "pays": "Maroc",
+  "cv": "https://pieberkane.live/data/assets/Hamza_Maach.pdf",
+  "about": "J'étudie actuellement le développement digital Web, et je suis en formation d'innovation entrepreneuriale. Toujours à la recherche d'innovations, de nouveaux programmes et outils de développement. Je m'intéresse à la gestion de projet pour SaaS software (Méthodes Agiles, SCRUM). Je suis passionné par la digitalisation et les innovations digitales surtout dans le domaine de Digital Marketing.",
+  "metier": "Full-Stack Web",
+  "contact": {
+    "email": "hamzamaach56@gmail.com",
+    "tel": "+212 766-935013",
+    "whatsapp": "+212766935013",
+    "instagram": "hamzamaah_",
+    "twitter": "hamza_maax",
+    "github": "hamzamaach",
+    "linkedin": "hamzamaach",
+    "telegram": "hamzamaach"
+  },
+  "images": {
+    "me1": "https://pieberkane.live/data/assets/me.jpeg",
+    "me2": "https://pieberkane.live/data/assets/me2.jpg",
+    "me3": "https://pieberkane.live/data/assets/m5.jpg",
+    "me4": "https://pieberkane.live/data/assets/me4.jpg"
+  },
+  "formation": [
+    {
+      "titre": "TECHNICIEN SPÉCIALISÉ EN DÉVELOPPEMENT DIGITAL",
+      "instute": "Institut des technologies appliquée Berkane",
+      "ref": "OFPPT",
+      "date": "Depuis septembre 2021"
+    },
+    {
+      "titre": "PROGRAMME D'INNOVATION ENTREPRENEURIALE (PIE)",
+      "instute": "Institut des technologies appliquée Berkane",
+      "ref": "OFPPT",
+      "date": "Depuis octobre 2021"
+    },
+    {
+      "titre": "BACCALAURÉAT SCIENCE EXPÉRIMENTALE",
+      "instute": "Lycee ABOU LKHAIR, Berkane",
+      "ref": "",
+      "date": "juillet 2020"
+    }
+  ],
+  "competence": [
+    {
+      "categorie": "Les langages de programmation",
+      "filter": "hardskills",
+      "about": [
+        "Python",
+        "Php",
+        "JavaScript",
+        "MySQL",
+        "MongoDB"
+      ]
+    },
+    {
+      "categorie": "Les languages des balises et mises en page",
+      "filter": "hardskills",
+      "about": [
+        "HTML",
+        "CSS",
+        "CSS Grid",
+        "Bootstrap"
+      ]
+    },
+    {
+      "categorie": "Les Frameworks",
+      "filter": "hardskills",
+      "about": [
+        "ReactJS"
+      ]
+    },
+    {
+      "categorie": "IDE",
+      "filter": "logiciels",
+      "about": [
+        "VS Code",
+        "PyCharm",
+        "DataGrip",
+        "PhpStorm"
+      ]
+    },
+    {
+      "categorie": "Outils de gestion de projet",
+      "filter": "logiciels",
+      "about": [
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Jira software"
+      ]
+    },
+    {
+      "categorie": "Les outils de conception",
+      "filter": "logiciels",
+      "about": [
+        "StarUML",
+        "Figma"
+      ]
+    },
+    {
+      "categorie": "Ouverture à la nouveauté",
+      "filter": "softskills",
+      "about": ["On m'apprend sans cesse de nouvelles choses et de nouveaux outils."]
+    },
+    {
+      "categorie": "Respectueux",
+      "filter": "softskills",
+      "about": ["Le respect mutuale est important pour moi dans toutes les situations."]
+    },
+    {
+      "categorie": "Attentif, à l'ecoute",
+      "filter": "softskills",
+      "about": ["Me permet de prêter attention aux besoins et aux préoccupations des autres, et de comprendre leur point de vue."]
+    },
+    {
+      "categorie": "Flexibilité et adaptabilité",
+      "filter": "softskills",
+      "about": ["Ma flexibilité et mon adaptabilité me permettent de m'adapter rapidement aux changements."]
+    },
+    {
+      "categorie": "Résolution de problèmes",
+      "filter": "softskills",
+      "about": ["Ce qui me rend efficace dans la gestion des situations imprévues et la prise de décisions stratégiques."]
+    },
+    {
+      "categorie": "Observateur",
+      "filter": "softskills",
+      "about": ["Mon soft skill d'observation me permet de remarquer les détails importants."]
+    },
+    {
+      "categorie": "Laravel 9",
+      "filter": "encours",
+      "about": []
+    },
+    {
+      "categorie": "Ethique professionnelle",
+      "filter": "softskills",
+      "about": ["Ce qui me permet de générer confiance et respect envers les collègues."]
+    },{
+      "categorie": "L'entreprenariat",
+      "filter": "encours",
+      "about": []
+    },
+    {
+      "categorie": "Redux",
+      "filter": "encours",
+      "about": []
+    },
+    {
+      "categorie": "UML",
+      "filter": "encours",
+      "about": []
+    },
+    {
+      "categorie": "React Js",
+      "filter": "encours",
+      "about": []
+    },
+    {
+      "categorie": "JavaScript avancé",
+      "filter": "encours",
+      "about": []
+    }
+  ],
+  "certificat": [
+    {
+      "id": "9452f947fafb",
+      "filter": "backend",
+      "titre": "CSS Certificate",
+      "date": "Janvier 2023",
+      "from": "HackeRank",
+      "lien": "https://www.hackerrank.com/certificates/iframe/9452f947fafb"
+    },
+    {
+      "id": "54d2b96d1870",
+      "filter": "database",
+      "titre": "SQL (Basic) Certificate",
+      "date": "Janvier 2023",
+      "from": "HackeRank",
+      "lien": "https://www.hackerrank.com/certificates/iframe/9452f947fafb"
+    },
+    {
+      "id": "",
+      "filter": "other",
+      "titre": "Microsoft Word Expert (Office 2016)",
+      "date": "Juin 2022",
+      "from": "Microsoft",
+      "lien": "https://www.credly.com/badges/a91c6915-be42-4a6e-b978-062ff3873446?source=linked_in_profile"
+    },
+    {
+      "id": "6333364139",
+      "filter": "frontend",
+      "titre": "Créez des animations CSS modernes",
+      "date": "Mars 2022",
+      "from": "OpenClassrooms",
+      "lien": "https://openclassrooms.com/en/course-certificates/6333364139"
+    },
+    {
+      "id": "7545989242",
+      "filter": "backend",
+      "titre": "Apprenez les bases du langage Python",
+      "date": "Mars 2022",
+      "from": "OpenClassrooms",
+      "lien": "https://openclassrooms.com/en/course-certificates/7545989242"
+    },
+    {
+      "id": "7287668706",
+      "filter": "frontend",
+      "titre": "Responsive avec Bootstrap 4",
+      "date": "Mars 2022",
+      "from": "OpenClassrooms",
+      "lien": "https://openclassrooms.com/en/course-certificates/7287668706"
+    },
+    {
+      "id": "4645387204",
+      "filter": "frontend",
+      "titre": "Responsive avec Bootstrap 5",
+      "date": "Mars 2022",
+      "from": "OpenClassrooms",
+      "lien": "https://openclassrooms.com/en/course-certificates/4645387204"
+    },
+    {
+      "id": "7039874246",
+      "filter": "frontend",
+      "titre": "Site web avec HTML5 et CSS3",
+      "date": "Mars 2022",
+      "from": "OpenClassrooms",
+      "lien": "https://openclassrooms.com/en/course-certificates/7039874246"
+    },
+    {
+      "id": "5817088742",
+      "filter": "backend",
+      "titre": "Découpez et intégrez une maquette",
+      "date": "Mars 2022",
+      "from": "OpenClassrooms",
+      "lien": "https://openclassrooms.com/en/course-certificates/5817088742"
+    }
+  ],
+  "interet": [
+    {
+      "titre": "Randonnée pédestre",
+      "body": "La randonnée pédestre est importante pour maintenir une bonne condition physique et pour découvrir la nature en même temps.",
+      "image": "https://pieberkane.live/data/assets/randonnee.jpg"
+    },
+    {
+      "titre": "Le sport (Football)",
+      "body": "Trés important pour améliorer ma condition physique et mon bien-être mental, ",
+      "image": "https://pieberkane.live/data/assets/football.jpg"
+    },
+    {
+      "titre": "Vie associative",
+      "body": "je prends toujours soin développer des compétences sociales et contribuer à la communauté en même temps.",
+      "image": "https://pieberkane.live/data/assets/associative.png"
+    },
+    {
+      "titre": "Animation de réseaux sociaux",
+      "body": "Gérer des comptes sur les réseaux sociaux permet de mieux comprendre la population et ses goûts. À l'heure actuelle, j'ai un petit compte Instagram ",
+      "image": "https://pieberkane.live/data/assets/rs.png",
+      "ref": "https://www.instagram.com/pie_stagiaires/"
+    },
+    {
+      "titre": "Photographie / Montage",
+      "body": "La photographie et le montage sont importants pour exprimer ma créativité, capturer des moments importants et créer des souvenirs durables.",
+      "image": "https://pieberkane.live/data/assets/montage.jpg"
+    }
+  ],
+  "project": [
+    {
+      "titre": "Gl-Shop1",
+      "outils": [
+        "HTML",
+        "CSS"
+      ],
+      "description": "My first interface ever, it's a store for glaces.",
+      "demo": "https://raw.githack.com/hamzamaach/Gl-Shop1/main/index.html",
+      "github": "",
+      "image": "https://pieberkane.live/data/assets/project1.png"
+    },
+    {
+      "titre": "Gestion des employés",
+      "outils": [
+        "Php",
+        "Bootstrap"
+      ],
+      "description": "Petite application de gestion des employés avec l'architecture MVC.",
+      "demo": "",
+      "github": "https://github.com/hamzamaach/gestionEmployees-MVC",
+      "image": "https://pieberkane.live/data/assets/project3.png"
+    },
+    {
+      "titre": "PortFolio React",
+      "outils": [
+        "HTML",
+        "CSS",
+        "JSON",
+        "ReactJs"
+      ],
+      "description": "C'est une interface qui a été construite par react Js.",
+      "demo": "",
+      "github": "",
+      "image": "https://pieberkane.live/data/assets/project2.png"
+    }
+  ]
+}
