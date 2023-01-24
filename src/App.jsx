@@ -27,14 +27,14 @@ const App = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch("https://api.github.com/users/ermix3")
+    fetch("https://api.github.com/users/hamzamaach")
       .then(res => res.json())
       .then(data => {
         // console.log(data);
         setData(data);
       });
 
-      fetch("https://api.github.com/users/ermix3/repos")
+      fetch("https://api.github.com/users/hamzamaach/repos")
       .then(res => res.json())
       .then(data => {
         setReposObj(data);
@@ -76,12 +76,6 @@ const App = () => {
       .then(res => res.json())
       .then(data => {
         setData(data);
-        // setObj(data)
-      })
-      fetch(searchRepos)
-      .then(res => res.json())
-      .then(data => {
-        setReposObj(data);
         // setObj(data)
       })
   }
@@ -131,7 +125,7 @@ const App = () => {
         <div className="container certificat_container">
           <div layout className="certificats">
             {
-              reposObj.map((item, index) =>
+              repos1.map((item, index) =>
                 <div layout className="certificat" key={index} >
                   <div className="card1 card1_container">
                     <div className="card1 card1_titre">
