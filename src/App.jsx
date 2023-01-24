@@ -91,9 +91,18 @@ const App = () => {
   return (
     <div>
       <header>
-        <form onSubmit={handeleSubmit} className="search-box">
-          <button className="btn-search"><GoSearch className="fas fa-search" /></button>
-          <input onChange={handeleSearch} type="text" className="input-search" placeholder="Type to Search..." />
+        <form
+          onSubmit={handeleSubmit}
+          className="search-box">
+          <button className="btn-search">
+            <GoSearch className="fas fa-search" />
+          </button>
+          <input
+            onChange={handeleSearch}
+            type="text"
+            className="input-search"
+            placeholder="Type username..."
+          />
           <ToastContainer
             position="top-right"
             autoClose={5000}
@@ -112,23 +121,33 @@ const App = () => {
         <div className="container header_container">
           <div className="card">
             <div className="card-header">
-              <img src={avatar} alt="Profile Image" className="profile-img" />
+              <img
+                src={avatar}
+                alt="Profile Image"
+                className="profile-img"
+              />
             </div>
             <div className="card-body">
               {name &&
                 <p className="name">{name}</p>
               }
               {username &&
-                <p className="mail"><CgProfile className='iconC' />{username}</p>
+                <p className="mail">
+                  <CgProfile className='iconC' />{username}
+                </p>
               }
               {location &&
-                <p className="mail"><ImLocation className='iconC' />{location}</p>
+                <p className="mail">
+                  <ImLocation className='iconC' />{location}
+                </p>
               }
               {bio &&
                 <p className="mail">{bio}</p>
               }
               {blog &&
-                <a href={blog} target='_blank' className="mail"><HiCursorClick className='iconC' />{blog}</a>
+                <a href={blog} target='_blank' className="mail">
+                  <HiCursorClick className='iconC' />{blog}
+                </a>
               }
 
             </div>

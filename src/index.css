@@ -407,9 +407,9 @@ header {
     cursor: pointer;
     border-radius: 50%;
     position: absolute;
-    right: 0px;
+    right: -20px;
     color: #ffffff;
-    background-color: transparent;
+    background-color: var(--color-primary);
     pointer-events: painted;
 }
 
@@ -421,7 +421,7 @@ header {
     transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
 
-.input-search:focus {
+.input-search {
     width: 300px;
     border-radius: 0px;
     background-color: transparent;
